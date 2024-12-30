@@ -26,11 +26,14 @@ Print the values of the linked list.*/
 	 third->next = NULL;
 	 
 	 Node* temp = head;
+     int count = 0; //to count the number of node in linked list
 	 
 	 while(temp!=NULL)
 	 {
 		 cout<<temp->Values<<endl;
+         count++;
 		 temp = temp->next;
 	 } 
+     cout<<"The total number of nodes is: "<<count<<endl;
 	 return 0;
  }
